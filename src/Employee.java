@@ -6,9 +6,9 @@ public class Employee {
     public Employee() {
 
         name = setName();
-        username = username;
-        email = email;
-        password = password;
+        username = setUsername(name);
+        email = setEmail(username);
+        password = setPassword(username);
 
     }//end of Employee constructor
 
@@ -16,24 +16,28 @@ public class Employee {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName() {
+
         this.name = name;
+
     }
 
     public String getUsername() {
         return username;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String username) {
+
+        this.email = username;
+
     }
 
     public String getPassword() {
