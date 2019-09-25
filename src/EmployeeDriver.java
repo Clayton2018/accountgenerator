@@ -6,6 +6,10 @@ public class EmployeeDriver {
 
     public static void main(String[] args) {
 
+        System.out.print("Please enter your name:");
+
+        String input = userInput.next();
+
     }
 
 }
